@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Quiz</string>
+    <string name="button_play">Play</string>
+    <string name="start_text">Match the cover of the book with its first line</string>
+    <string name="count_right_answers">Количество правильных ответов: %s</string>
+</resources>
