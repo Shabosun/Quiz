@@ -40,7 +40,7 @@ class QuestionFragment : Fragment() {
         viewModel.gameOver.observe(viewLifecycleOwner, Observer {newValue ->
             if(newValue)
             {
-                val lists = arrayOf("fd", "fk")
+
                 val action = QuestionFragmentDirections.actionQuestionFragmentToFinishFragment(
                     viewModel.questlistResult.toTypedArray(),
                     viewModel.correctAnswers
@@ -73,6 +73,11 @@ class QuestionFragment : Fragment() {
 
 
         return view
+    }
+
+    override fun onDestroyView() {
+        super.onDestroyView()
+        _binding = null
     }
 
 
